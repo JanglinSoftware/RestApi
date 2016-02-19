@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>de5d5052-e32f-48e8-b991-589a05d9ea32</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Janglin.RestApiSdk</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Extentions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Json\Request.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Json\Response.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Request.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Response.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)RestException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Verb.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Xml\ComplexArrayPropertyAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Xml\ComplexPropertyAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Xml\EnumerableResponse.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Xml\ItemResponse.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Xml\Request.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Xml\RequestAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Xml\Response.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Xml\SimplePropertyAttribute.cs" />
+  </ItemGroup>
+</Project>

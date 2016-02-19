@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestApiSdkClassic", "RestApiSdkClassic\RestApiSdkClassic.csproj", "{795CCF21-F617-4F82-8458-6E7BCB27F501}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "RestApiSdkShared", "RestApiSdkShared\RestApiSdkShared.shproj", "{DE5D5052-E32F-48E8-B991-589A05D9EA32}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		RestApiSdkShared\RestApiSdkShared.projitems*{795ccf21-f617-4f82-8458-6e7bcb27f501}*SharedItemsImports = 4
+		RestApiSdkShared\RestApiSdkShared.projitems*{de5d5052-e32f-48e8-b991-589a05d9ea32}*SharedItemsImports = 13
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{795CCF21-F617-4F82-8458-6E7BCB27F501}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{795CCF21-F617-4F82-8458-6E7BCB27F501}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{795CCF21-F617-4F82-8458-6E7BCB27F501}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{795CCF21-F617-4F82-8458-6E7BCB27F501}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
