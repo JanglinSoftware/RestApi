@@ -36,7 +36,7 @@ namespace Janglin.RestApiSdk
         /// <param name="value">The base URL.</param>
         /// <param name="subRoutes">An array of strings representing subroutes.</param>
         /// <returns>The base url with the subroutes appended delimeted by a forward slash (/).</returns>
-        static internal string SubRoutes(this string value, params string[] subRoutes)
+        static public string SubRoutes(this string value, params string[] subRoutes)
         {
             if (subRoutes == null)
                 throw new ArgumentNullException("subRoutes");
