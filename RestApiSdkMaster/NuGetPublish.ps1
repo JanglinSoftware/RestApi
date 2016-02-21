@@ -16,31 +16,24 @@ Function CreateSubFolders($dir){
 	Copy-Item install.ps1 $lib\install.ps1
 }
 
-Function RemoveSubFolders($dir){
-    $lib = $dir + '\lib\net45'
-    Remove-Item -Recurse -Force $lib
-    $lib = $dir + '\lib\portable-net40+sl5+wp80+win8+wpa81'
-    Remove-Item -Recurse -Force $lib
-    $lib = $dir + '\lib\portable-net45+dnxcore50'
-    Remove-Item -Recurse -Force $lib
-}
-
 try{
     $scriptpath = $MyInvocation.MyCommand.Path
     $dir = Split-Path $scriptpath
     Push-Location $dir
+    
+    CreateSubFolders($dir + '\NuGet')
 
-	#This file could change name with a NuGet update for the NuGet command line package!
-    Copy-Item packages\NuGet.CommandLine.3.3.0\tools\NuGet.exe NuGet.exe
+	Push-Location 'NuGet'
 
-    CreateSubFolders($dir)
+    #This file could change name with a NuGet update for the NuGet command line package!
+    Copy-Item ..\packages\NuGet.CommandLine.3.3.0\tools\NuGet.exe NuGet.exe
+    Copy-Item ..\RestApiSdk.nuspec RestApiSdk.nuspec
 
 	& .\NuGet.exe pack RestApiSdk.nuspec
-
-    RemoveSubFolders($dir)
+	& .\NuGet.exe setApiKey ec102be3-f205-454b-a412-d87ff0c9008c
+	& .\NuGet.exe push Janglin.RestApiSdk.1.1.0.nupkg
 }
 finally{
-    Remove-Item NuGet.exe
-    Remove-Item RestApiSdk.1.0.0.nupkg
-    RemoveSubFolders($dir)
+	Push-Location '..'
+    Remove-Item -Recurse -Force NuGet
 }
