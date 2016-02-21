@@ -7,8 +7,8 @@
     <ProjectGuid>{518D74E4-71FE-420E-A9A2-C43A924A3AA4}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>RestApiSdkUniversal</RootNamespace>
-    <AssemblyName>RestApiSdkUniversal</AssemblyName>
+    <RootNamespace>Janglin.RestApiSdk</RootNamespace>
+    <AssemblyName>RestApiSdk</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetPlatformVersion>10.0.10586.0</TargetPlatformVersion>

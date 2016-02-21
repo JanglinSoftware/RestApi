@@ -8,20 +8,13 @@ using System.Runtime.InteropServices;
 // associated with an assembly.
 [assembly: AssemblyTitle("REST API SDK")]
 [assembly: AssemblyDescription("An abstract base for create software development kits for RESTful web APIs.")]
-[assembly: AssemblyConfiguration(".NET 4.5")]
+[assembly: AssemblyConfiguration("Win8Universal")]
 [assembly: AssemblyCompany("Janglin Software")]
-[assembly: AssemblyProduct("REST API SDK Classic")]
+[assembly: AssemblyProduct("REST API SDK Win8")]
 [assembly: AssemblyCopyright("Copyright © Janglin Software 2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
-
-// Setting ComVisible to false makes the types in this assembly not visible 
-// to COM components.  If you need to access a type in this assembly from 
-// COM, set the ComVisible attribute to true on that type.
-[assembly: ComVisible(false)]
-
-// The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("795ccf21-f617-4f82-8458-6e7bcb27f501")]
+[assembly: NeutralResourcesLanguage("en")]
 
 // Version information for an assembly consists of the following four values:
 //
@@ -35,5 +28,3 @@ using System.Runtime.InteropServices;
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
-[assembly: NeutralResourcesLanguage("en-US")]
-

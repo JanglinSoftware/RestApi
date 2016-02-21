@@ -1,17 +1,16 @@
-﻿using System.Resources;
-using System.Reflection;
+﻿using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("REST API SDK")]
-[assembly: AssemblyDescription("An abstract base for create software development kits for RESTful web APIs.")]
-[assembly: AssemblyConfiguration(".NET 4.5")]
-[assembly: AssemblyCompany("Janglin Software")]
-[assembly: AssemblyProduct("REST API SDK Classic")]
-[assembly: AssemblyCopyright("Copyright © Janglin Software 2016")]
+[assembly: AssemblyTitle("TestConsole")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("TestConsole")]
+[assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -21,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("795ccf21-f617-4f82-8458-6e7bcb27f501")]
+[assembly: Guid("9df2f9dc-3665-4b27-a586-df9f27814bca")]
 
 // Version information for an assembly consists of the following four values:
 //
@@ -35,5 +34,3 @@ using System.Runtime.InteropServices;
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
-[assembly: NeutralResourcesLanguage("en-US")]
-

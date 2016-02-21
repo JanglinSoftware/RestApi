@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("RestApiSdkUniversal")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("RestApiSdkUniversal")]
-[assembly: AssemblyCopyright("Copyright ©  2016")]
+[assembly: AssemblyTitle("REST API SDK")]
+[assembly: AssemblyDescription("An abstract base for create software development kits for RESTful web APIs.")]
+[assembly: AssemblyConfiguration("UAP")]
+[assembly: AssemblyCompany("Janglin Software")]
+[assembly: AssemblyProduct("REST API SDK UAP")]
+[assembly: AssemblyCopyright("Copyright © Janglin Software 2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+	<id>Janglin.RestApiSdk</id>
+	<version>1.0.0</version>
+	<title>Rest API SDK</title>
+	<authors>Daniel R. Przybylski</authors>
+	<owners>Janglin Software</owners>
+	<licenseUrl>http://janglin.com/RestApiSdk/License</licenseUrl>
+	<projectUrl>http://janglin.com/RestApiSdk</projectUrl>
+	<iconUrl>http://janglin.com/Content/favicon.ico</iconUrl>
+	<requireLicenseAcceptance>true</requireLicenseAcceptance>
+	<description>Helper method library with convenient methods to assist with creating more specific web API SDKs.</description>
+	<language>en-US</language>
+	<tags>REST API</tags>
+	<releaseNotes>Initial release.</releaseNotes>
+	<copyright>Janglin Software - Copyright 2016</copyright>
+  <dependencies>
+	<group>
+	  <dependency id="Newtonsoft.Json" version="8.0.2" />
+	</group>
+  </dependencies>
+  </metadata>
+</package>
