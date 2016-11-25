@@ -30,7 +30,7 @@ try{
     Copy-Item ..\RestApiSdk.nuspec RestApiSdk.nuspec
 
 	& .\NuGet.exe pack RestApiSdk.nuspec
-	& .\NuGet.exe push Janglin.RestApiSdk.2.0.2.nupkg ec102be3-f205-454b-a412-d87ff0c9008c -s https://www.nuget.org/api/v2/package
+	& .\NuGet.exe push Janglin.RestApiSdk.2.0.3.nupkg ec102be3-f205-454b-a412-d87ff0c9008c -s https://www.nuget.org/api/v2/package
 }
 finally{
 	Push-Location '..'

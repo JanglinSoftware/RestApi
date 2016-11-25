@@ -4,3 +4,4 @@ C:\Users\danp\Source\Repos\RestApiSdk\RestApiSdkMaster\RestApiSdkClassic\bin\Rel
 C:\Users\danp\Source\Repos\RestApiSdk\RestApiSdkMaster\RestApiSdkClassic\bin\Release\Newtonsoft.Json.xml
 C:\Users\danp\Source\Repos\RestApiSdk\RestApiSdkMaster\RestApiSdkClassic\obj\Release\RestApiSdk.dll
 C:\Users\danp\Source\Repos\RestApiSdk\RestApiSdkMaster\RestApiSdkClassic\obj\Release\RestApiSdk.pdb
+C:\Users\danp\Source\Repos\RestApiSdk\RestApiSdkMaster\RestApiSdkClassic\obj\Release\RestApiSdkClassic.csprojResolveAssemblyReference.cache

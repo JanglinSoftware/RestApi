@@ -80,12 +80,6 @@ namespace Janglin.Rest.Sdk
 		/// <summary>Convenient method to convert string into an string appropriate for a URL.</summary>
 		/// <param name="value">String.</param>
 		/// <returns>Return an all lower case string version of the objects ToString() method's return value if it's not null. If it is null, then return null.</returns>
-		public static string ToStringIfNotNull(this string value)
-		{
-			if (value == null)
-				return null;
-			else
-				return value.ToString();
-		}
+		public static string EmptyIfNull(this string value) { return value == null ? String.Empty : value; }
 	}
 }

@@ -14,3 +14,4 @@ C:\Users\danp\Source\Repos\RestApiSdk\RestApiSdkMaster\RestApiSdkWin8\obj\Debug\
 C:\Users\danp\Source\Repos\RestApiSdk\RestApiSdkMaster\RestApiSdkWin8\obj\Debug\qualifiers.txt
 C:\Users\danp\Source\Repos\RestApiSdk\RestApiSdkMaster\RestApiSdkWin8\obj\Debug\qualifiers.txt.intermediate
 C:\Users\danp\Source\Repos\RestApiSdk\RestApiSdkMaster\RestApiSdkWin8\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\danp\Source\Repos\RestApiSdk\RestApiSdkMaster\RestApiSdkWin8\obj\Debug\RestApiSdkWin8.csprojResolveAssemblyReference.cache

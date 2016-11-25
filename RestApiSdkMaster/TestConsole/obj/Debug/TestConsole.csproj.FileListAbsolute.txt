@@ -5,3 +5,4 @@ C:\Users\danp\Source\Repos\RestApiSdk\RestApiSdkMaster\TestConsole\bin\Debug\New
 C:\Users\danp\Source\Repos\RestApiSdk\RestApiSdkMaster\TestConsole\bin\Debug\Newtonsoft.Json.xml
 C:\Users\danp\Source\Repos\RestApiSdk\RestApiSdkMaster\TestConsole\obj\Debug\TestConsole.exe
 C:\Users\danp\Source\Repos\RestApiSdk\RestApiSdkMaster\TestConsole\obj\Debug\TestConsole.pdb
+C:\Users\danp\Source\Repos\RestApiSdk\RestApiSdkMaster\TestConsole\obj\Debug\TestConsole.csprojResolveAssemblyReference.cache
