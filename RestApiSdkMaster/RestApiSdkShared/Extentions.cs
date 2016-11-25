@@ -43,5 +43,49 @@ namespace Janglin.Rest.Sdk
 
 			return output.ToString().Trim(new char[] { '&', '?' }).Trim();
 		}
+
+		/// <summary>Convenient method to convert Nullable boolean values into an string appropriate for a URL.</summary>
+		/// <param name="value">Nullable Boolean value.</param>
+		/// <returns>Return an all lower case string version of the Boolean input value if it's not null. If it is null, then return null.</returns>
+		public static string ToStringIfNotNull(this bool? value)
+		{
+			if (value.HasValue)
+				return value.ToString().ToLowerInvariant();
+			else
+				return null;
+		}
+
+		/// <summary>Convenient method to convert Nullable byte values into an string appropriate for a URL.</summary>
+		/// <param name="value">Nullable Byte value.</param>
+		/// <returns>Return an all lower case string version of the Boolean input value if it's not null. If it is null, then return null.</returns>
+		public static string ToStringIfNotNull(this byte? value)
+		{
+			if (value.HasValue)
+				return value.ToString().ToLowerInvariant();
+			else
+				return null;
+		}
+
+		/// <summary>Convenient method to convert class object into an string appropriate for a URL.</summary>
+		/// <param name="value">Class instantiation.</param>
+		/// <returns>Return an all lower case string version of the objects ToString() method's return value if it's not null. If it is null, then return null.</returns>
+		public static string ToStringIfNotNull(this object value)
+		{
+			if (value == null)
+				return null;
+			else
+				return value.ToString();
+		}
+
+		/// <summary>Convenient method to convert string into an string appropriate for a URL.</summary>
+		/// <param name="value">String.</param>
+		/// <returns>Return an all lower case string version of the objects ToString() method's return value if it's not null. If it is null, then return null.</returns>
+		public static string ToStringIfNotNull(this string value)
+		{
+			if (value == null)
+				return null;
+			else
+				return value.ToString();
+		}
 	}
 }
