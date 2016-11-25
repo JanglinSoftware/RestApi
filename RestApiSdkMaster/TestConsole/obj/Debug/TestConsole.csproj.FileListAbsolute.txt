@@ -1,0 +1,7 @@
+C:\Users\danp\Source\Repos\RestApiSdk\RestApiSdkMaster\TestConsole\bin\Debug\TestConsole.exe.config
+C:\Users\danp\Source\Repos\RestApiSdk\RestApiSdkMaster\TestConsole\bin\Debug\TestConsole.exe
+C:\Users\danp\Source\Repos\RestApiSdk\RestApiSdkMaster\TestConsole\bin\Debug\TestConsole.pdb
+C:\Users\danp\Source\Repos\RestApiSdk\RestApiSdkMaster\TestConsole\bin\Debug\Newtonsoft.Json.dll
+C:\Users\danp\Source\Repos\RestApiSdk\RestApiSdkMaster\TestConsole\bin\Debug\Newtonsoft.Json.xml
+C:\Users\danp\Source\Repos\RestApiSdk\RestApiSdkMaster\TestConsole\obj\Debug\TestConsole.exe
+C:\Users\danp\Source\Repos\RestApiSdk\RestApiSdkMaster\TestConsole\obj\Debug\TestConsole.pdb

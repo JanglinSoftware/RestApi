@@ -1,0 +1,16 @@
+C:\Users\danp\Source\Repos\RestApiSdk\RestApiSdkMaster\RestApiSdkUniversal\bin\Debug\RestApiSdk.dll
+C:\Users\danp\Source\Repos\RestApiSdk\RestApiSdkMaster\RestApiSdkUniversal\bin\Debug\RestApiSdk.pdb
+C:\Users\danp\Source\Repos\RestApiSdk\RestApiSdkMaster\RestApiSdkUniversal\bin\Debug\RestApiSdk.pri
+C:\Users\danp\Source\Repos\RestApiSdk\RestApiSdkMaster\RestApiSdkUniversal\obj\Debug\RestApiSdk.dll
+C:\Users\danp\Source\Repos\RestApiSdk\RestApiSdkMaster\RestApiSdkUniversal\obj\Debug\RestApiSdk.pdb
+C:\Users\danp\Source\Repos\RestApiSdk\RestApiSdkMaster\RestApiSdkUniversal\obj\Debug\priconfig.xml
+C:\Users\danp\Source\Repos\RestApiSdk\RestApiSdkMaster\RestApiSdkUniversal\obj\Debug\priconfig.xml.intermediate
+C:\Users\danp\Source\Repos\RestApiSdk\RestApiSdkMaster\RestApiSdkUniversal\obj\Debug\layout.resfiles
+C:\Users\danp\Source\Repos\RestApiSdk\RestApiSdkMaster\RestApiSdkUniversal\obj\Debug\layout.resfiles.intermediate
+C:\Users\danp\Source\Repos\RestApiSdk\RestApiSdkMaster\RestApiSdkUniversal\obj\Debug\resources.resfiles
+C:\Users\danp\Source\Repos\RestApiSdk\RestApiSdkMaster\RestApiSdkUniversal\obj\Debug\resources.resfiles.intermediate
+C:\Users\danp\Source\Repos\RestApiSdk\RestApiSdkMaster\RestApiSdkUniversal\obj\Debug\pri.resfiles
+C:\Users\danp\Source\Repos\RestApiSdk\RestApiSdkMaster\RestApiSdkUniversal\obj\Debug\pri.resfiles.intermediate
+C:\Users\danp\Source\Repos\RestApiSdk\RestApiSdkMaster\RestApiSdkUniversal\obj\Debug\qualifiers.txt
+C:\Users\danp\Source\Repos\RestApiSdk\RestApiSdkMaster\RestApiSdkUniversal\obj\Debug\qualifiers.txt.intermediate
+C:\Users\danp\Source\Repos\RestApiSdk\RestApiSdkMaster\RestApiSdkUniversal\obj\Debug\MultipleQualifiersPerDimensionFound.txt

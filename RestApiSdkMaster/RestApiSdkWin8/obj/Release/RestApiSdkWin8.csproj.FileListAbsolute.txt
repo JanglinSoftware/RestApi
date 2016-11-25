@@ -1,0 +1,16 @@
+C:\Users\danp\Source\Repos\RestApiSdk\RestApiSdkMaster\RestApiSdkWin8\bin\Release\RestApiSdk.dll
+C:\Users\danp\Source\Repos\RestApiSdk\RestApiSdkMaster\RestApiSdkWin8\bin\Release\RestApiSdk.pdb
+C:\Users\danp\Source\Repos\RestApiSdk\RestApiSdkMaster\RestApiSdkWin8\bin\Release\RestApiSdk.pri
+C:\Users\danp\Source\Repos\RestApiSdk\RestApiSdkMaster\RestApiSdkWin8\obj\Release\RestApiSdk.dll
+C:\Users\danp\Source\Repos\RestApiSdk\RestApiSdkMaster\RestApiSdkWin8\obj\Release\RestApiSdk.pdb
+C:\Users\danp\Source\Repos\RestApiSdk\RestApiSdkMaster\RestApiSdkWin8\obj\Release\priconfig.xml
+C:\Users\danp\Source\Repos\RestApiSdk\RestApiSdkMaster\RestApiSdkWin8\obj\Release\priconfig.xml.intermediate
+C:\Users\danp\Source\Repos\RestApiSdk\RestApiSdkMaster\RestApiSdkWin8\obj\Release\layout.resfiles
+C:\Users\danp\Source\Repos\RestApiSdk\RestApiSdkMaster\RestApiSdkWin8\obj\Release\layout.resfiles.intermediate
+C:\Users\danp\Source\Repos\RestApiSdk\RestApiSdkMaster\RestApiSdkWin8\obj\Release\resources.resfiles
+C:\Users\danp\Source\Repos\RestApiSdk\RestApiSdkMaster\RestApiSdkWin8\obj\Release\resources.resfiles.intermediate
+C:\Users\danp\Source\Repos\RestApiSdk\RestApiSdkMaster\RestApiSdkWin8\obj\Release\pri.resfiles
+C:\Users\danp\Source\Repos\RestApiSdk\RestApiSdkMaster\RestApiSdkWin8\obj\Release\pri.resfiles.intermediate
+C:\Users\danp\Source\Repos\RestApiSdk\RestApiSdkMaster\RestApiSdkWin8\obj\Release\qualifiers.txt
+C:\Users\danp\Source\Repos\RestApiSdk\RestApiSdkMaster\RestApiSdkWin8\obj\Release\qualifiers.txt.intermediate
+C:\Users\danp\Source\Repos\RestApiSdk\RestApiSdkMaster\RestApiSdkWin8\obj\Release\MultipleQualifiersPerDimensionFound.txt

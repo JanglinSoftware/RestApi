@@ -10,19 +10,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)Extentions.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Json\Request.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Json\Response.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Request.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Response.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)RestException.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Verb.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Xml\ComplexArrayPropertyAttribute.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Xml\ComplexPropertyAttribute.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Xml\EnumerableResponse.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Xml\ItemResponse.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Xml\Request.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Xml\RequestAttribute.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Xml\Response.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Xml\SimplePropertyAttribute.cs" />
   </ItemGroup>
 </Project>

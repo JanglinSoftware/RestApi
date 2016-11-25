@@ -1,0 +1,6 @@
+C:\Users\danp\Source\Repos\RestApiSdk\RestApiSdkMaster\RestApiSdkClassic\bin\Debug\RestApiSdk.dll
+C:\Users\danp\Source\Repos\RestApiSdk\RestApiSdkMaster\RestApiSdkClassic\bin\Debug\RestApiSdk.pdb
+C:\Users\danp\Source\Repos\RestApiSdk\RestApiSdkMaster\RestApiSdkClassic\bin\Debug\Newtonsoft.Json.dll
+C:\Users\danp\Source\Repos\RestApiSdk\RestApiSdkMaster\RestApiSdkClassic\bin\Debug\Newtonsoft.Json.xml
+C:\Users\danp\Source\Repos\RestApiSdk\RestApiSdkMaster\RestApiSdkClassic\obj\Debug\RestApiSdk.dll
+C:\Users\danp\Source\Repos\RestApiSdk\RestApiSdkMaster\RestApiSdkClassic\obj\Debug\RestApiSdk.pdb

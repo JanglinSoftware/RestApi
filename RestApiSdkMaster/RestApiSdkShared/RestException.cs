@@ -2,21 +2,24 @@
 using System.IO;
 using System.Net;
 
-namespace Janglin.RestApiSdk
+namespace Janglin.Rest.Sdk
 {
 	public class RestException : Exception
 	{
 		const string ErrorDetailsKey = "ErrorDetails";
+		const string StatusCodeKey = "StatusCode";
+		const string StatusDescriptionKey = "StatusDescription";
+		const string WebExceptionMessageKey = "WebExceptionMessage";
+		const string ResponseKey = "Response";
 
 		public RestException(WebException ex)
-			: base("The call to the RESTful API was unsuccessful. Please see items in the Data property collection in this exception for more information.")
+			: base("The call to the RESTful API was unsuccessful. Please see items in the Data property collection in this exception for more information.", ex)
 		{
 			if (ex == null)
 				throw new ArgumentNullException("ex");
 			else
 			{
 				HandleWebException(ex);
-				Data.Add("WebExceptionMessage", ex.Message);
 			}
 		}
 
@@ -26,7 +29,10 @@ namespace Janglin.RestApiSdk
 
 			if (httpresponse != null)
 			{
-				System.Diagnostics.Debug.WriteLine("Error code: {0}", httpresponse.StatusCode);
+				Data.Add(StatusCodeKey, httpresponse.StatusCode);
+				Data.Add(StatusDescriptionKey, httpresponse.StatusDescription);
+				Data.Add(WebExceptionMessageKey, ex.Message);
+				Data.Add(ResponseKey, ex.Response);
 
 				var data = httpresponse.GetResponseStream();
 
@@ -64,8 +70,39 @@ namespace Janglin.RestApiSdk
 		{
 			get
 			{
-				try { return (string)Data["WebExceptionMessage"]; }
-				catch (Exception) { return null; }
+				return Data.Contains(WebExceptionMessageKey)
+				? (string)Data[ErrorDetailsKey]
+				: String.Empty;
+			}
+		}
+
+		public HttpStatusCode? StatusCode
+		{
+			get
+			{
+				return Data.Contains(StatusCodeKey)
+				? (HttpStatusCode?)Data[StatusCodeKey]
+				: null;
+			}
+		}
+
+		public string StatusDescription
+		{
+			get
+			{
+				return Data.Contains(StatusDescriptionKey)
+				? (string)Data[StatusDescriptionKey]
+				: String.Empty;
+			}
+		}
+
+		public WebResponse Response
+		{
+			get
+			{
+				return Data.Contains(ResponseKey)
+				? (WebResponse)Data[ResponseKey]
+				: null;
 			}
 		}
 	}
