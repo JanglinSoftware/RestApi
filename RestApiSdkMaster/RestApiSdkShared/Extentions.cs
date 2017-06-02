@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Text;
 
 namespace Janglin.Rest.Sdk
@@ -12,14 +13,15 @@ namespace Janglin.Rest.Sdk
 		/// <code>baseUri/routes[0]/routes[1] ... routes[n]></code></returns>
 		public static string Append(this string baseUri, params string[] routes)
 		{
+			if (String.IsNullOrWhiteSpace(baseUri)) throw new ArgumentException("Parameter cannot be empty or whitespace.", "baseUri");
+
 			var output = new StringBuilder(baseUri.Trim().Trim('/'));
 
 			if (routes != null)
 			{
-				foreach (var route in routes)
+				foreach (var route in routes.Where(r => !String.IsNullOrWhiteSpace(r)))
 				{
-					if (!String.IsNullOrWhiteSpace(route))
-						output.AppendFormat("/{0}", Uri.EscapeDataString(route.Trim().Trim('/')));
+					output.AppendFormat("/{0}", Uri.EscapeDataString(route.Trim().Trim('/')));
 				}
 			}
 
@@ -47,10 +49,15 @@ namespace Janglin.Rest.Sdk
 
 			for (var index = 0; index < parameterNameValuePairs.Length - 1; index += 2)
 			{
-				if (!String.IsNullOrWhiteSpace(parameterNameValuePairs[index]) && parameterNameValuePairs[index + 1] != null)
+				if (String.IsNullOrWhiteSpace(parameterNameValuePairs[index]))
+					throw new ArgumentException("Key values in name/value list cannot be null, empty or whitespace.", "parameterNameValuePairs");
+
+				var value = parameterNameValuePairs[index + 1] == null ? String.Empty: parameterNameValuePairs[index + 1];
+
+				if (!String.IsNullOrWhiteSpace(parameterNameValuePairs[index]))
 					output.AppendFormat("{0}={1}&",
 						Uri.EscapeDataString(parameterNameValuePairs[index].Trim()),
-						Uri.EscapeDataString(parameterNameValuePairs[index + 1].Trim()));
+						Uri.EscapeDataString(value.Trim()));
 			}
 
 			return output.ToString().Trim(new char[] { '&', '?' }).Trim();

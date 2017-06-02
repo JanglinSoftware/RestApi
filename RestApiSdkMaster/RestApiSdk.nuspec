@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
 	<id>Janglin.RestApiSdk</id>
-	<version>2.0.3</version>
+	<version>2.0.4</version>
 	<title>Rest API SDK</title>
 	<authors>Daniel R. Przybylski</authors>
 	<owners>Janglin Software</owners>
@@ -13,11 +13,11 @@
 	<description>Helper method library with convenient methods to assist with creating more specific web API SDKs.</description>
 	<language>en-US</language>
 	<tags>REST API</tags>
-	<releaseNotes>Narrowed focus to REST exception and extension methods. Restored some extension methods.</releaseNotes>
+	<releaseNotes>Added XML comments and better Unit testing..</releaseNotes>
 	<copyright>Janglin Software - Copyright 2016</copyright>
   <dependencies>
 	<group>
-	  <dependency id="Newtonsoft.Json" version="9.0.1" />
+	  <dependency id="Newtonsoft.Json" version="10.0.2" />
 	</group>
   </dependencies>
   </metadata>
