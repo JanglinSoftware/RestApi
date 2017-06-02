@@ -7,9 +7,9 @@ Function CreateSubFolders($dir){
     New-Item -ItemType Directory -Force -Path  $lib
 	Copy-Item RestApiSdkUniversal\bin\Release\RestApiSdk.dll $lib\RestApiSdk.dll
 
-    $lib = $dir + '\lib\portable-net45+dnxcore50'
-    New-Item -ItemType Directory -Force -Path  $lib
-	Copy-Item RestApiSdkWin8\bin\Release\RestApiSdk.dll $lib\RestApiSdk.dll
+    #$lib = $dir + '\lib\portable-net45+dnxcore50'
+    #New-Item -ItemType Directory -Force -Path  $lib
+	#Copy-Item RestApiSdkWin8\bin\Release\RestApiSdk.dll $lib\RestApiSdk.dll
 
     $lib = $dir + '\tools'
     New-Item -ItemType Directory -Force -Path  $lib
@@ -30,7 +30,7 @@ try{
     Copy-Item ..\RestApiSdk.nuspec RestApiSdk.nuspec
 
 	& .\NuGet.exe pack RestApiSdk.nuspec
-	& .\NuGet.exe push Janglin.RestApiSdk.2.0.4.nupkg ec102be3-f205-454b-a412-d87ff0c9008c -s https://www.nuget.org/api/v2/package
+	& .\NuGet.exe push Janglin.RestApiSdk.2.0.5.nupkg ec102be3-f205-454b-a412-d87ff0c9008c -source https://www.nuget.org/api/v2/package
 }
 finally{
 	Push-Location '..'

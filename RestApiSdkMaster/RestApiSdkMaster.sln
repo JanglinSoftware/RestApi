@@ -1,15 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestApiSdkClassic", "RestApiSdkClassic\RestApiSdkClassic.csproj", "{795CCF21-F617-4F82-8458-6E7BCB27F501}"
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "RestApiSdkShared", "RestApiSdkShared\RestApiSdkShared.shproj", "{DE5D5052-E32F-48E8-B991-589A05D9EA32}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestApiSdkUniversal", "RestApiSdkUniversal\RestApiSdkUniversal.csproj", "{518D74E4-71FE-420E-A9A2-C43A924A3AA4}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestApiSdkWin8", "RestApiSdkWin8\RestApiSdkWin8.csproj", "{1047DE56-3C4C-4826-AA18-D116FD7ADEAF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{46951E3B-DB46-41AB-AFB3-5AA76AADD569}"
 	ProjectSection(SolutionItems) = preProject
@@ -71,22 +69,6 @@ Global
 		{518D74E4-71FE-420E-A9A2-C43A924A3AA4}.Release|x64.Build.0 = Release|x64
 		{518D74E4-71FE-420E-A9A2-C43A924A3AA4}.Release|x86.ActiveCfg = Release|x86
 		{518D74E4-71FE-420E-A9A2-C43A924A3AA4}.Release|x86.Build.0 = Release|x86
-		{1047DE56-3C4C-4826-AA18-D116FD7ADEAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1047DE56-3C4C-4826-AA18-D116FD7ADEAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1047DE56-3C4C-4826-AA18-D116FD7ADEAF}.Debug|ARM.ActiveCfg = Debug|Any CPU
-		{1047DE56-3C4C-4826-AA18-D116FD7ADEAF}.Debug|ARM.Build.0 = Debug|Any CPU
-		{1047DE56-3C4C-4826-AA18-D116FD7ADEAF}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{1047DE56-3C4C-4826-AA18-D116FD7ADEAF}.Debug|x64.Build.0 = Debug|Any CPU
-		{1047DE56-3C4C-4826-AA18-D116FD7ADEAF}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{1047DE56-3C4C-4826-AA18-D116FD7ADEAF}.Debug|x86.Build.0 = Debug|Any CPU
-		{1047DE56-3C4C-4826-AA18-D116FD7ADEAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1047DE56-3C4C-4826-AA18-D116FD7ADEAF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1047DE56-3C4C-4826-AA18-D116FD7ADEAF}.Release|ARM.ActiveCfg = Release|Any CPU
-		{1047DE56-3C4C-4826-AA18-D116FD7ADEAF}.Release|ARM.Build.0 = Release|Any CPU
-		{1047DE56-3C4C-4826-AA18-D116FD7ADEAF}.Release|x64.ActiveCfg = Release|Any CPU
-		{1047DE56-3C4C-4826-AA18-D116FD7ADEAF}.Release|x64.Build.0 = Release|Any CPU
-		{1047DE56-3C4C-4826-AA18-D116FD7ADEAF}.Release|x86.ActiveCfg = Release|Any CPU
-		{1047DE56-3C4C-4826-AA18-D116FD7ADEAF}.Release|x86.Build.0 = Release|Any CPU
 		{9DF2F9DC-3665-4B27-A586-DF9F27814BCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9DF2F9DC-3665-4B27-A586-DF9F27814BCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9DF2F9DC-3665-4B27-A586-DF9F27814BCA}.Debug|ARM.ActiveCfg = Debug|Any CPU
