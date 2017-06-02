@@ -5,6 +5,11 @@ namespace Janglin.Rest.Sdk
 {
 	public static class Extensions
 	{
+		/// <summary>Append any number of strings to a base URL delimited by a slash.</summary>
+		/// <param name="baseUri">Base URI to append to.</param>
+		/// <param name="routes">Collection of strings that will be appended in order delimited by a slash.</param>
+		/// <returns>A single string which is the result of the parameters:
+		/// <code>baseUri/routes[0]/routes[1] ... routes[n]></code></returns>
 		public static string Append(this string baseUri, params string[] routes)
 		{
 			var output = new StringBuilder(baseUri.Trim().Trim('/'));
@@ -21,10 +26,17 @@ namespace Janglin.Rest.Sdk
 			return output.Append('/').ToString();
 		}
 
+		/// <summary>Append any number of parameters as name/value pairs to a URL.</summary>
+		/// <param name="url">URL upon which to append.</param>
+		/// <param name="parameterNameValuePairs">A even-numbered collection of strings representing name/value pairs which will be appended to the <paramref name="url"/> 
+		/// in parametric syntax.</param>
+		/// <returns>A single string which is hte result of the parameters:
+		/// <code>url?parameterNameValuePairs[0]=parameterNameValuePairs[1]&parameterNameValuePairs[2]=parameterNameValuePairs[3] ... &parameterNameValuePairs[n]=parameterNameValuePairs[n+1]</code>
+		/// </returns>
 		public static string Parameters(this string url, params string[] parameterNameValuePairs)
 		{
-			if (parameterNameValuePairs == null) return String.Concat(url.Trim(), '/');
-			if (parameterNameValuePairs.Length < 1) return String.Concat(url.Trim(), '/');
+			if (parameterNameValuePairs == null || parameterNameValuePairs.Length < 1)
+				return String.Concat(url.Trim().Trim('/'), '/');
 
 			if (parameterNameValuePairs.Length % 2 != 0)
 				throw new ArgumentException("Parameter must be a even numbered collection of strings representing name/value pairs.", "parameterNameValuePairs");

@@ -12,17 +12,24 @@ namespace Janglin.Rest.Sdk
 		const string WebExceptionMessageKey = "WebExceptionMessage";
 		const string ResponseKey = "Response";
 
+		/// <summary>
+		/// Default constructor.
+		/// </summary>
+		/// <param name="ex">Web exception which to wrap in this RestException including its inner exception.</param>
 		public RestException(WebException ex)
 			: base("The call to the RESTful API was unsuccessful. Please see items in the Data property collection in this exception for more information.", ex)
 		{
 			if (ex == null)
 				throw new ArgumentNullException("ex");
 			else
-			{
 				HandleWebException(ex);
-			}
 		}
 
+		/// <summary>
+		/// Parse the input web exception into the base exception.
+		/// </summary>
+		/// <param name="ex">Web Exception to parse.</param>
+		/// <remarks></remarks>
 		private void HandleWebException(WebException ex)
 		{
 			var httpresponse = (HttpWebResponse)ex.Response;
@@ -56,6 +63,9 @@ namespace Janglin.Rest.Sdk
 			}
 		}
 
+		/// <summary>
+		/// Error details from response text of web exception.
+		/// </summary>
 		public string ErrorDetails
 		{
 			get
@@ -66,43 +76,55 @@ namespace Janglin.Rest.Sdk
 			}
 		}
 
+		/// <summary>
+		/// Message from web exception.
+		/// </summary>
 		public string WebExceptionMessage
 		{
 			get
 			{
 				return Data.Contains(WebExceptionMessageKey)
-				? (string)Data[ErrorDetailsKey]
-				: String.Empty;
+					? (string)Data[ErrorDetailsKey]
+					: String.Empty;
 			}
 		}
 
+		/// <summary>
+		/// HTTP status code.
+		/// </summary>
 		public HttpStatusCode? StatusCode
 		{
 			get
 			{
 				return Data.Contains(StatusCodeKey)
-				? (HttpStatusCode?)Data[StatusCodeKey]
-				: null;
+					? (HttpStatusCode?)Data[StatusCodeKey]
+					: null;
 			}
 		}
 
+		/// <summary>
+		/// HTTP status description.
+		/// </summary>
 		public string StatusDescription
 		{
 			get
 			{
 				return Data.Contains(StatusDescriptionKey)
-				? (string)Data[StatusDescriptionKey]
-				: String.Empty;
+					? (string)Data[StatusDescriptionKey]
+					: String.Empty;
 			}
 		}
 
+		/// <summary>
+		/// HTTP web response.
+		/// </summary>
 		public WebResponse Response
 		{
 			get
 			{
 				return Data.Contains(ResponseKey)
-				? (WebResponse)Data[ResponseKey]
-				: null;
+					? (WebResponse)Data[ResponseKey]
+					: null;
 			}
 		}
 	}
